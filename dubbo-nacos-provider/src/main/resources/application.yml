@@ -1,0 +1,31 @@
+dubbo:
+  application:
+    id: dubbo-provider-demo
+    name: dubbo-provider-demo
+
+  registry:
+    id: my-nacos
+    address: nacos://10.1.10.217:8848
+
+  config:
+      multiple: true
+
+  protocols:
+    dubbo:
+      name: dubbo
+      port: 20880
+    rest:
+      name: rest
+      port: 8888
+
+  scan:
+    base-packages: com.sky.dubbo.nacos.demo.provider
+
+nacos:
+  config:
+    server-addr: 10.1.10.217:8848
+
+demo:
+  service:
+    version: 1.0.0
+    name: demoService

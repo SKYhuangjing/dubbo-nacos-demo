@@ -1,0 +1,14 @@
+dubbo:
+  registry:
+    address: nacos://10.1.10.217:8848
+
+  application:
+    name: dubbo-consumer-demo
+
+nacos:
+  config:
+    server-addr: 10.1.10.217:8848
+
+demo:
+  service:
+    version: 1.0.0

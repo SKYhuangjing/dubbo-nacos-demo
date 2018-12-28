@@ -1,0 +1,10 @@
+version: "3"
+services:
+  provider:
+    image: sky/dubbo-nacos-provider:latest
+    container_name: dubbo-nacos-provider
+    ports:
+      - 20880:20880
+    environment:
+      - DUBBO_IP_TO_REGISTRY=10.64.4.222
+      - DUBBO_PORT_TO_REGISTRY=20880
