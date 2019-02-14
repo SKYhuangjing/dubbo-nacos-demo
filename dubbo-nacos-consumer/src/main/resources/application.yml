@@ -1,13 +1,13 @@
 dubbo:
   registry:
-    address: nacos://10.1.10.217:8848
+    address: zookeeper://69.28.48.244:2181
 
   application:
     name: dubbo-consumer-demo
 
 nacos:
   config:
-    server-addr: 10.1.10.217:8848
+    server-addr: 69.28.48.244:8848
 
 demo:
   service:

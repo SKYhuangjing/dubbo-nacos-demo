@@ -6,7 +6,9 @@
     - dubbo-nacos-api (API,Model 定义)
     - dubbo-nacos-provider (API实现)
     - dubbo-nacos-consumer (API调用)
-    - dubbo-nacos-dependencies (依赖管理)
+    - dubbo-nacos-pom (项目依赖管理)
+    - dubbo-zookeeper-dependencies (zk依赖管理)
+    - dubbo-nacos-dependencies (nacos依赖管理)
 
 ## 服务启动
 本项目编译依赖 maven , 运行依赖 jre

@@ -4,11 +4,12 @@ dubbo:
     name: dubbo-provider-demo
 
   registry:
-    id: my-nacos
-    address: nacos://10.1.10.217:8848
+    id: my-zookeeper
+    address: zookeeper://69.28.48.244:2181
+    simplified: true
 
-  config:
-      multiple: true
+  metadataReport:
+    address: zookeeper://69.28.48.244:2181
 
   protocols:
     dubbo:
@@ -23,7 +24,7 @@ dubbo:
 
 nacos:
   config:
-    server-addr: 10.1.10.217:8848
+    server-addr: 69.28.48.244:8848
 
 demo:
   service:

@@ -1,9 +1,9 @@
 package com.sky.dubbo.nacos.demo.consumer;
 
-import com.alibaba.dubbo.config.annotation.Reference;
 import com.alibaba.nacos.api.config.annotation.NacosValue;
 import com.alibaba.nacos.spring.context.annotation.config.NacosPropertySource;
 import com.sky.dubbo.nacos.demo.service.DemoService;
+import org.apache.dubbo.config.annotation.Reference;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

@@ -1,10 +1,10 @@
 package com.sky.dubbo.nacos.demo.provider.service.impl;
 
 
-import com.alibaba.dubbo.config.annotation.Service;
-import com.alibaba.dubbo.rpc.RpcContext;
 import com.alibaba.nacos.api.config.annotation.NacosValue;
 import com.sky.dubbo.nacos.demo.service.DemoService;
+import org.apache.dubbo.config.annotation.Service;
+import org.apache.dubbo.rpc.RpcContext;
 import org.springframework.beans.factory.annotation.Value;
 
 import javax.ws.rs.GET;

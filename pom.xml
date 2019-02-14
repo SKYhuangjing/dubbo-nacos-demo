@@ -12,9 +12,11 @@
 
     <modules>
         <module>dubbo-nacos-dependencies</module>
+        <module>dubbo-zookeeper-dependencies</module>
         <module>dubbo-nacos-consumer</module>
         <module>dubbo-nacos-provider</module>
         <module>dubbo-nacos-api</module>
+        <module>dubbo-nacos-pom</module>
     </modules>
 
     <properties>
@@ -23,23 +25,10 @@
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputencoding>UTF-8</project.reporting.outputencoding>
-        <dubbo-nacos-dependencies.version>0.0.1-SNAPSHOT</dubbo-nacos-dependencies.version>
-
 
         <docker.image.prefix>sky</docker.image.prefix>
     </properties>
 
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>com.sky</groupId>
-                <artifactId>dubbo-nacos-dependencies</artifactId>
-                <version>${dubbo-nacos-dependencies.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
 
     <build>
         <pluginManagement>
