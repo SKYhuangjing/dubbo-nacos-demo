@@ -1,23 +1,13 @@
+
 dubbo:
   application:
     id: dubbo-provider-demo
     name: dubbo-provider-demo
 
-  registry:
-    id: my-zookeeper
-    address: zookeeper://69.28.48.244:2181
-    simplified: true
-
-  metadataReport:
-    address: zookeeper://69.28.48.244:2181
-
   protocols:
     dubbo:
       name: dubbo
       port: 20880
-    rest:
-      name: rest
-      port: 8888
 
   scan:
     base-packages: com.sky.dubbo.nacos.demo.provider
@@ -30,3 +20,7 @@ demo:
   service:
     version: 1.0.0
     name: demoService
+
+spring:
+  profiles:
+    include: nacos

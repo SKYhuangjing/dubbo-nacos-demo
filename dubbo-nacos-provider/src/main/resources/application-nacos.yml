@@ -1,0 +1,7 @@
+dubbo:
+  registry:
+    id: my-nacos
+    address: nacos://69.28.48.244:8848
+
+  metadataReport:
+    address: nacos://69.28.48.244:8848

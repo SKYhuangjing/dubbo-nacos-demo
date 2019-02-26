@@ -12,7 +12,7 @@ import javax.ws.rs.Path;
 import javax.ws.rs.QueryParam;
 
 @Path("demo")
-@Service(version = "${demo.service.version}", protocol = {"dubbo", "rest"},
+@Service(version = "${demo.service.version}", protocol = {"dubbo"},
         registry = "${dubbo.registry.id}")
 public class DefaultService implements DemoService {
 

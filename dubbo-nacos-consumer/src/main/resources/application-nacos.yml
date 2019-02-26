@@ -1,0 +1,4 @@
+dubbo:
+  registry:
+    address: nacos://69.28.48.244:8848
+

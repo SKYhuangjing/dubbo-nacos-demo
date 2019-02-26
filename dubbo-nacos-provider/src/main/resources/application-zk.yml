@@ -1,0 +1,9 @@
+dubbo:
+  registry:
+    id: my-zookeeper
+    address: zookeeper://69.28.48.244:2181
+    simplified: true
+
+  metadataReport:
+    address: zookeeper://69.28.48.244:2181
+
