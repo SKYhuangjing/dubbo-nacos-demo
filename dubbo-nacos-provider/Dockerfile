@@ -1,6 +1,6 @@
 FROM openjdk:8-jdk-alpine
 
-MAINTAINER sky.huang@zenlayer.com
+LABEL maintainer="sky_1994@outlook.com" version="0.0.1" description="dubbo-nacos-provider demo"
 
 ARG JAR_FILE
 
