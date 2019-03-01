@@ -4,5 +4,10 @@ dubbo:
     address: nacos://69.28.48.244:8848
     simplified: true
 
-  metadataReport:
+  metadata-report:
     address: nacos://69.28.48.244:8848
+
+  config-center:
+    address: nacos://69.28.48.244:8848
+    namespace: public
+    group: provider

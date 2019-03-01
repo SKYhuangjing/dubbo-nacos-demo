@@ -4,6 +4,7 @@ import com.alibaba.nacos.api.config.annotation.NacosValue;
 import com.alibaba.nacos.spring.context.annotation.config.NacosPropertySource;
 import com.sky.dubbo.nacos.demo.service.DemoService;
 import org.apache.dubbo.config.annotation.Reference;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -11,10 +12,9 @@ import javax.annotation.PostConstruct;
 import java.io.IOException;
 
 @SpringBootApplication
-@NacosPropertySource(dataId = "example", autoRefreshed = true)
 public class ConsumerApplication {
 
-    @NacosValue(value = "${useLocalCache:Mercy}", autoRefreshed = true)
+    @Value(value = "${demo.service.name}")
     private String useLocalCache;
 
     @Reference(version = "${demo.service.version}")

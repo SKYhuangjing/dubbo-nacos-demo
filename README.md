@@ -54,7 +54,13 @@ docker run sky/dubbo-nacos-consumer
 
 ```
 
-注: 本例子使用的 dubbo-registry-nacos [https://github.com/SKYhuangjing/dubbo-registry-nacos] 是作者自己改造适配的
+注: 
 
-原型例子可参考 [dubbo-registry-nacos](
+本例子使用的 [SKYhuangjing/dubbo-registry-nacos](https://github.com/SKYhuangjing/dubbo-registry-nacos) 是作者自己改造适配的
+
+本例子使用的 [SKYhuangjing/dubbo-metadata-report-nacos](https://github.com/SKYhuangjing/dubbo-metadata-report-nacos) 是作者自己改造适配的
+
+本例子使用的 [SKYhuangjing/dubbo-configcenter-nacos](https://github.com/SKYhuangjing/dubbo-configcenter-nacos) 是作者自己改造适配的
+
+原型例子可参考小马哥提供的 [mercyblitz/dubbo-registry-nacos](
 https://github.com/mercyblitz/dubbo-registry-nacos)

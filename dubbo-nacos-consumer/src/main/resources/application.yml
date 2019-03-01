@@ -5,13 +5,10 @@ dubbo:
   application:
     name: dubbo-consumer-demo
 
-nacos:
-  config:
-    server-addr: 69.28.48.244:8848
-
 demo:
   service:
     version: 1.0.0
+    name: demoService
 
 spring:
   profiles:

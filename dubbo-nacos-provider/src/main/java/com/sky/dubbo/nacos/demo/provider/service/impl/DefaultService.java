@@ -1,7 +1,6 @@
 package com.sky.dubbo.nacos.demo.provider.service.impl;
 
 
-import com.alibaba.nacos.api.config.annotation.NacosValue;
 import com.sky.dubbo.nacos.demo.service.DemoService;
 import org.apache.dubbo.config.annotation.Service;
 import org.apache.dubbo.rpc.RpcContext;
@@ -19,7 +18,7 @@ public class DefaultService implements DemoService {
     @Value("${demo.service.name}")
     private String serviceName;
 
-    @NacosValue(value = "${nacosValue:N/A}", autoRefreshed = true)
+    @Value(value = "${user.name}")
     private String nacosValue;
 
     @GET

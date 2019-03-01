@@ -4,6 +4,8 @@ dubbo:
     address: zookeeper://69.28.48.244:2181
     simplified: true
 
-  metadataReport:
+  metadata-report:
     address: zookeeper://69.28.48.244:2181
 
+  config-center:
+    address: zookeeper://69.28.48.244:2181

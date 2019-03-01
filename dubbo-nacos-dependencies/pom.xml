@@ -10,14 +10,21 @@
     <modelVersion>4.0.0</modelVersion>
 
     <properties>
-        <nacos.version>0.8.0</nacos.version>
+        <nacos.version>0.9.0</nacos.version>
         <dubbo-registry-nacos.version>2.7.0</dubbo-registry-nacos.version>
+        <dubbo-metatada-report-nacos.version>2.7.0</dubbo-metatada-report-nacos.version>
+        <dubbo-configcenter-nacos.version>2.7.0</dubbo-configcenter-nacos.version>
         <nacos-config-spring-boot.version>0.2.1</nacos-config-spring-boot.version>
     </properties>
 
     <dependencies>
 
         <!-- Alibaba Nacos -->
+        <dependency>
+            <groupId>com.alibaba.nacos</groupId>
+            <artifactId>nacos-api</artifactId>
+            <version>${nacos.version}</version>
+        </dependency>
         <dependency>
             <groupId>com.alibaba.nacos</groupId>
             <artifactId>nacos-client</artifactId>
@@ -36,6 +43,18 @@
             <groupId>com.alibaba.boot</groupId>
             <artifactId>nacos-config-spring-boot-starter</artifactId>
             <version>${nacos-config-spring-boot.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.dubbo</groupId>
+            <artifactId>dubbo-metadata-report-nacos</artifactId>
+            <version>${dubbo-metatada-report-nacos.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.dubbo</groupId>
+            <artifactId>dubbo-configcenter-nacos</artifactId>
+            <version>${dubbo-configcenter-nacos.version}</version>
         </dependency>
 
     </dependencies>
