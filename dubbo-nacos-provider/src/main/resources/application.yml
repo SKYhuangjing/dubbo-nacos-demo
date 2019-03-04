@@ -1,9 +1,10 @@
+spring:
+  application:
+    name: dubbo-provider-demo
+  profiles:
+    include: nacos
 
 dubbo:
-  application:
-    id: dubbo-provider-demo
-    name: dubbo-provider-demo
-
   protocols:
     dubbo:
       name: dubbo
@@ -16,7 +17,3 @@ demo:
   service:
     version: 1.0.0
     name: demoService
-
-spring:
-  profiles:
-    include: nacos

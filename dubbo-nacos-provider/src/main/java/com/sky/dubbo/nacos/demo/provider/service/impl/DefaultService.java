@@ -18,8 +18,17 @@ public class DefaultService implements DemoService {
     @Value("${demo.service.name}")
     private String serviceName;
 
-    @Value(value = "${user.name}")
+    @Value(value = "${demo1.name:hahahah}")
     private String nacosValue;
+
+
+    public DefaultService() {
+        System.out.println("xxx");
+    }
+
+    public void setNacosValue(String nacosValue) {
+        this.nacosValue = nacosValue;
+    }
 
     @GET
     @Path("/say-hello")

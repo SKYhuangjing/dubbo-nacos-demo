@@ -9,5 +9,7 @@ dubbo:
 
   config-center:
     address: nacos://69.28.48.244:8848
-    namespace: public
-    group: provider
+    group: dubbo-provider-demo
+    namespace:
+    config-file: dubbo.properties
+    include-spring-env: true

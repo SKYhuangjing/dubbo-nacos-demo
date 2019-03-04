@@ -1,7 +1,4 @@
 dubbo:
-  registry:
-    address: zookeeper://69.28.48.244:2181
-
   application:
     name: dubbo-consumer-demo
 
@@ -13,3 +10,5 @@ demo:
 spring:
   profiles:
     include: nacos
+server:
+  port: 9090
