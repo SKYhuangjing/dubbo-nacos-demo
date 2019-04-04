@@ -3,27 +3,14 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
-    <groupId>com.sky</groupId>
-    <artifactId>dubbo-zookeeper-dependencies</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <parent>
+        <artifactId>dependencies</artifactId>
+        <groupId>com.sky</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <artifactId>dependencies-zookeeper</artifactId>
     <modelVersion>4.0.0</modelVersion>
-
-    <properties>
-        <dubbo.version>2.7.0</dubbo.version>
-    </properties>
-
-    <dependencyManagement>
-        <dependencies>
-            <!-- Aapche Dubbo  -->
-            <dependency>
-                <groupId>org.apache.dubbo</groupId>
-                <artifactId>dubbo-dependencies-bom</artifactId>
-                <version>${dubbo.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
+    <packaging>pom</packaging>
 
     <dependencies>
         <!-- Zookeeper -->

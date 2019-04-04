@@ -11,12 +11,11 @@
     <description>Demo project for Dubbo Nacos</description>
 
     <modules>
-        <module>dubbo-nacos-dependencies</module>
-        <module>dubbo-zookeeper-dependencies</module>
-        <module>dubbo-nacos-consumer</module>
-        <module>dubbo-nacos-provider</module>
-        <module>dubbo-nacos-api</module>
-        <module>dubbo-nacos-pom</module>
+        <module>dependencies</module>
+        <module>demo-pom</module>
+        <module>demo-api</module>
+        <module>demo-consumer</module>
+        <module>demo-provider</module>
     </modules>
 
     <properties>

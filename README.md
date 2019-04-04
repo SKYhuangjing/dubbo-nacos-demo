@@ -3,23 +3,27 @@
 
 ## Introduction
 - dubbo-nacos-demo
-    - dubbo-nacos-api (API,Model 定义)
-    - dubbo-nacos-provider (API实现)
-    - dubbo-nacos-consumer (API调用)
-    - dubbo-nacos-pom (项目依赖管理)
-    - dubbo-zookeeper-dependencies (zk依赖管理)
-    - dubbo-nacos-dependencies (nacos依赖管理)
+    - demo-api (API,Model 定义)
+    - demo-provider (API实现)
+    - demo-consumer (API调用)
+    - demo-pom (项目依赖管理)
+    - dependencies (依赖管理)
+        - dependencies-zookeeper (zk 依赖管理)
+        - dependencies-nacos (nacos 依赖管理)
+        - dependencies-seata (seata 依赖管理)
 
 ## 服务启动
 本项目编译依赖 maven , 运行依赖 jre
-### dubbo-nacos-api
+### demo-api
 无需启动, 只提供依赖定义
-### dubbo-zookeeper-dependencies
+### dependencies-zookeeper
 zookeeper 注册中心依赖管理
-### dubbo-nacos-dependencies
-nacos  注册中心依赖管理
-### dubbo-nacos-provider
-进入 dubbo-nacos-provider 项目根目录, 编译
+### dependencies-nacos
+nacos 注册中心依赖管理
+### dependencies-seata
+seata 分布式事务依赖管理
+### demo-provider
+进入 demo-provider 项目根目录, 编译
 ```bash
 mvn clean install
 ```
@@ -28,16 +32,16 @@ mvn clean install
 
 启动服务
 ```bash
-java -jar target/dubbo-nacos-provider-0.0.1-SNAPSHOT.jar
+java -jar target/demo-provider-0.0.1-SNAPSHOT.jar
 ```
 docker images 编译 并运行
 ```bash
 mvn dockerfile:build
-docker run -t -p 12345:12345 sky/dubbo-nacos-provider
+docker run -t -p 12345:12345 sky/demo-provider
 ```
 > 服务可以启动多个, 端口会自动分配
-### dubbo-nacos-consumer
-进入 dubbo-nacos-consumer 项目根目录, 编译
+### demo-consumer
+进入 demo-consumer 项目根目录, 编译
 ```bash
 mvn clean install
 ```
@@ -45,12 +49,12 @@ mvn clean install
 
 启动服务
 ```bash
-java -jar target/dubbo-nacos-consumer-0.0.1-SNAPSHOT.jar
+java -jar target/demo-consumer-0.0.1-SNAPSHOT.jar
 ```
 docker images 编译 并运行
 ```bash
 mvn dockerfile:build
-docker run sky/dubbo-nacos-consumer
+docker run sky/demo-consumer
 
 ```
 

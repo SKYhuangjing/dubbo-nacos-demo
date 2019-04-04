@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>dubbo-nacos-demo</artifactId>
+        <groupId>com.sky</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>dependencies</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>dependencies-nacos</module>
+        <module>dependencies-zookeeper</module>
+        <module>dependencies-seata</module>
+    </modules>
+
+    <properties>
+        <dubbo.version>2.7.1</dubbo.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- Aapche Dubbo  -->
+            <dependency>
+                <groupId>org.apache.dubbo</groupId>
+                <artifactId>dubbo-dependencies-bom</artifactId>
+                <version>${dubbo.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+
+</project>

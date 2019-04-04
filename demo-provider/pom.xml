@@ -3,35 +3,38 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>dubbo-nacos-pom</artifactId>
+        <artifactId>demo-pom</artifactId>
         <groupId>com.sky</groupId>
         <version>0.0.1-SNAPSHOT</version>
+        <relativePath>../demo-pom/pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>dubbo-nacos-provider</artifactId>
+    <artifactId>demo-provider</artifactId>
     <dependencies>
 
         <dependency>
             <groupId>com.sky</groupId>
-            <artifactId>dubbo-nacos-dependencies</artifactId>
+            <artifactId>dependencies-nacos</artifactId>
+            <type>pom</type>
         </dependency>
 
         <dependency>
             <groupId>com.sky</groupId>
-            <artifactId>dubbo-zookeeper-dependencies</artifactId>
+            <artifactId>dependencies-zookeeper</artifactId>
+            <type>pom</type>
+        </dependency>
+
+
+        <dependency>
+            <groupId>com.sky</groupId>
+            <artifactId>demo-api</artifactId>
+            <version>${project.version}</version>
         </dependency>
 
         <dependency>
             <groupId>org.apache.dubbo</groupId>
             <artifactId>dubbo-rpc-rest</artifactId>
-        </dependency>
-
-
-        <dependency>
-            <groupId>com.sky</groupId>
-            <artifactId>dubbo-nacos-api</artifactId>
-            <version>${project.version}</version>
         </dependency>
 
     </dependencies>

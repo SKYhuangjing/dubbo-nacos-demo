@@ -3,15 +3,17 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
-
-    <groupId>com.sky</groupId>
-    <artifactId>dubbo-nacos-dependencies</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <parent>
+        <artifactId>dependencies</artifactId>
+        <groupId>com.sky</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <artifactId>dependencies-nacos</artifactId>
     <modelVersion>4.0.0</modelVersion>
+    <packaging>pom</packaging>
 
     <properties>
-        <nacos.version>0.9.0</nacos.version>
-        <dubbo-registry-nacos.version>2.7.0</dubbo-registry-nacos.version>
+        <nacos.version>1.0.0-RC3</nacos.version>
         <dubbo-metatada-report-nacos.version>2.7.0</dubbo-metatada-report-nacos.version>
         <dubbo-configcenter-nacos.version>2.7.0</dubbo-configcenter-nacos.version>
         <nacos-config-spring-boot.version>0.2.1</nacos-config-spring-boot.version>
@@ -35,7 +37,7 @@
         <dependency>
             <groupId>org.apache.dubbo</groupId>
             <artifactId>dubbo-registry-nacos</artifactId>
-            <version>${dubbo-registry-nacos.version}</version>
+            <version>${dubbo.version}</version>
         </dependency>
 
         <!-- Alibaba Nacos Config Starter -->
